@@ -17,6 +17,7 @@
   </head>
   <body>
 
+
     <!DOCTYPE html>
     <html>
     
@@ -26,8 +27,31 @@
     </head>
     
     <body>
+      <div data-sticky-container>
+        <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%">
+    
+        <div class="title-bar show-for-small-only" data-responsive-toggle="mobile-menu" id="mobile-menu-header">
+          <button id="hamburger" class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title text-right"><a href="./index-NYC.html">Oxford Tutors</a></div>
+        </div>
+    
+        <div class="top-bar show-for-small-only" id="mobile-menu">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <!-- <li class="menu-text">Site Title</li> -->
+              <li><a href="./index-NYC.html#team_section">Who We Are</a></li>
+              <li><a href="./index-NYC.html#service_section">Services</a></li>
+              <li><a href="./index-NYC.html#testimonials_section">Testimonials</a></li>
+              <li><a href="./index-NYC.html#contact_section">Contact Us</a></li>
+    
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    
       <div class="header-container">
-        <header class="wrapper clearfix">
+        <header id="header-top" class="wrapper clearfix">
           <div id="header-navbar-row" class="row">
     
             <div class="large-4 columns">
