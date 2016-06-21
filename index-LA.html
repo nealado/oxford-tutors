@@ -17,6 +17,7 @@
   </head>
   <body>
 
+
     <!DOCTYPE html>
     <html>
     
@@ -34,8 +35,31 @@
     
     <body>
     
+      <div data-sticky-container>
+        <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;" style="width:100%">
+    
+        <div class="title-bar show-for-small-only" id="mobile-menu-header" data-responsive-toggle="mobile-menu" >
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title text-right"><a href="./index-LA.html">Oxford Tutors</a></div>
+        </div>
+    
+        <div class="top-bar show-for-small-only" id="mobile-menu">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <!-- <li class="menu-text">Site Title</li> -->
+              <li><a href="./index-LA.html#team_section">Who We Are</a></li>
+              <li><a href="./index-LA.html#service_section">Services</a></li>
+              <li><a href="./index-LA.html#testimonials_section">Testimonials</a></li>
+              <li><a href="./index-LA.html#contact_section">Contact Us</a></li>
+    
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    
       <div class="header-container">
-        <header class="wrapper clearfix">
+        <header id="header-top" class="wrapper clearfix">
           <div id="header-navbar-row" class="row">
     
             <div class="large-4 columns">
@@ -79,14 +103,12 @@
         <div class="main wrapper clearfix">
     
           <article id="about_section">
-            <header class="callout large">
+            <header id="mission_statement" class="callout large">
+              <h2 id="mission_statement_header">LA's Premiere Tutoring Collective </h2>
+              <hr id="mission_statement_header">
               <p>
-                <strong>Oxford Tutors</strong> is a tutoring collective dedicated to helping students from preschool through university recognize their unique intelligence and potential. We believe that with the right coaching, all students have within them the capacity
-                to succeed academically and to thrive beyond the classroom.
+                <strong>Oxford Tutors LA</strong> is a tutoring collective dedicated to helping students become confident, independent and successful as quickly and efficiently as possible.
               </p>
-              <p>
-                At the core of our approach is the methodology that Oxford University made famous, the "Oxford tutorial system." This form of hands-on mentorship challenges students to be intellectually rigorous, resourceful, and independent, and to approach their studies
-                with curiosity and confidence.</p>
             </header>
     
             <section id="team_section">
@@ -95,7 +117,7 @@
               <div class="row small-up-1 medium-up-2">
                 <div class="small-3 small-centered columns">
                   <a data-open="exampleModal1">
-                    <img src="assets/img/elisabeth.jpg" class="thumbnail" alt="">
+                    <img src="assets/img/Elisabeth.jpg" class="thumbnail" alt="">
                   </a>
                 </div>
                 <div class="small-3 small-centered columns">
@@ -111,6 +133,11 @@
                 <div class="small-3 small-centered columns">
                   <a data-open="exampleModal4">
                     <img src="assets/img/Petey.png" class="thumbnail" alt="">
+                  </a>
+                </div>
+                <div class="small-3 small-centered columns">
+                  <a data-open="exampleModal5">
+                    <img src="assets/img/Alexis.jpg" class="thumbnail" alt="">
                   </a>
                 </div>
     
@@ -161,8 +188,29 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            <div class="reveal" id="exampleModal5" data-reveal>
+              <h3 class="tutor_name">Alexis</h3>
+              <p>
+                Alexis Hauk spent the better part of the last decade writing and editing for a wide variety of publications, including The Atlantic, TIME, the National Journal, Washington City Paper, Cape Cod Times, Boston Phoenix, Mental Floss, DCist, Uproxx and more. A transplant to Los Angeles in 2015, she holds degrees from Emerson College (M.A., Publishing and Writing) and Emory University (B.A., English/Creative Writing and Italian Studies). Fun fact, she also has an e.e.cummings verse tattooed on her shoulder, and once wrote an article about where famous writers are buried. She enjoys helping students with writing, the humanities, and college admissions.          </p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
     
             <section class="callout" id="service_section">
+    
+              <h2>How We Work</h2>
+    
+              <p style="text-align: justify">
+                <strong>Oxford Tutors LA</strong> is a tutoring collective dedicated to helping students from preschool through university recognize their unique intelligence and potential. We believe that with the right coaching, all students have within them the
+                capacity to succeed academically and to thrive beyond the classroom.
+              </p>
+              <p style="text-align: justify">
+                At the core of our approach is the methodology that Oxford University made famous, the "Oxford tutorial system." This form of hands-on mentorship challenges students to be intellectually rigorous, resourceful, and independent, and to approach their studies
+                with curiosity and confidence.</p>
+            <!-- </header> -->
+            <!-- How We Work Section ENDS  -->
+              <br>
               <h2>Services</h2>
     
               <ul class="accordion" data-accordion data-allow-all-closed="true">
@@ -210,7 +258,7 @@
                   </div>
                 </li>
                 <li class="accordion-item" data-accordion-item>
-                  <a class="accordion-title">COLLEGE AND BEYOND</a>
+                  <a class="accordion-title">College and Beyond</a>
                   <div class="accordion-content" data-tab-content>
                     <ul>
                       <li>Strategic Admissions Support for Grad School</li>
@@ -267,13 +315,12 @@
                   <div class="flex-circle-container">
                     <div class="flex-circle-item">
                       <p class="testimonial-number">
-                        76%
+                        99%
                       </p>
                       <p class="testimonial-text">
-                        of Students Experience a Standardized Testing Score Boost of at least 25%
+                        of families would recommend Oxford Tutors
                       </p>
                     </div>
-    
                   </div>
                 </div>
               </div>
@@ -285,7 +332,7 @@
                 </div>
                 <div class="row">
                   <div class="large-6 columns">
-                    <a href="./testimonials_parent.html">
+                    <a href="./testimonials_parent_la.html">
                       <div class="image-container">
                         <img id="parent-thumb" src="assets/img/parent.jpg" class="thumbnail" alt="">
                         <div class="testimonial-image-overlay">
@@ -315,7 +362,6 @@
                     <div class="quote">
                       <p>
                         "I got a scholarship to do my ACT prep with Oxford Tutors and the experience changed my life. I was a B student, but I aced the test and then everything changed..."
-    
                       </p>
                     </div>
                     <div class="student">
@@ -325,7 +371,7 @@
                     </div>
                   </div>
                   <div class="large-6 columns">
-                    <a href="./testimonials_student.html">
+                    <a href="./testimonials_student_la.html">
                       <img src="assets/img/student.jpg" class="thumbnail" alt="">
                       <div class="testimonial-image-overlay">
                         <p>
@@ -337,7 +383,7 @@
                 </div>
                 <div class="row medium-up-2">
                   <div class="large-6 columns">
-                    <a href="./testimonials_professionals.html">
+                    <a href="./testimonials_professionals_la.html">
                       <img src="assets/img/teacher.jpg" class="thumbnail" alt="">
                       <div class="testimonial-image-overlay">
                         <p>
@@ -368,21 +414,23 @@
     
         </div>
         <!-- #main -->
-        <section id="contact_section" class="wrapper callout">
-          <h2>Get in touch</h2>
     
-          <div id="contact_button_group" class="large expanded button-group">
-            <a href="mailto:info@oxfordtutorsnyc.com" class="large button">Parent or Student</a>
-            <a href="mailto:resumes@oxfordtutorsnyc.com " class="large button">Tutor Opportunities</a>
-          </div>
     
-        </section>
-    
-        <section id="copyright_section" class="wrapper text-center">
-          © Copyright 2016 Oxford Tutors LA. All Rights Reserved.
-        </section>
       </div>
       <!-- end #main-container -->
+      <section id="contact_section" class="wrapper callout">
+        <h2>Get in touch</h2>
+    
+        <div id="contact_button_group" class="row">
+          <a href="mailto:info@oxfordtutorsnyc.com" class=" small-5 columns large button">Parent or Student</a>
+          <a href="mailto:resumes@oxfordtutorsnyc.com " class=" small-5 columns large centered button">Tutor Opportunities</a>
+        </div>
+    
+      </section>
+      <br>
+      <section id="copyright_section" class="wrapper text-center">
+        © Copyright 2016 Oxford Tutors LA. All Rights Reserved.
+      </section>
     
     </body>
     
